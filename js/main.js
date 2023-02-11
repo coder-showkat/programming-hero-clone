@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 const milestonesData = JSON.parse(data).data;
 
 function milestoneLoaded() {
@@ -92,8 +93,5 @@ function milestoneLoaded() {
     document.querySelector('.milestoneImage').onload = function (){
         this.style.opacity = '1';
     }
-
-    
-
 
 milestoneLoaded();
